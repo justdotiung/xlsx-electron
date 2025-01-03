@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Excel Reader</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Reader</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/handsontable/dist/handsontable.full.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="uploadExcel">Upload Excel File</button>
 
-  <button id="uploadExcel">Upload Excel File</button>
-  <textarea id="output" placeholder="Processed JSON will appear here..."></textarea>
-  <button id="generateFiles" disabled>Download Processed Files</button>
-
-  <script src="scripts.js"></script>
-
-
-</body>
+    <button id="generateFiles" disabled>Download Processed Files</button>
+    <div id="hot-container"></div>
+    <script src="dist/bundle.js"></script>
+  </body>
 </html>

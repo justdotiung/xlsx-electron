@@ -20,10 +20,15 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
     "@electron-forge/plugin-fuses": "^7.6.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "^33.2.1"
+    "css-loader": "^7.1.2",
+    "electron": "^33.2.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
+    "handsontable": "^15.0.0",
     "xlsx": "^0.18.5"
   }
 }
