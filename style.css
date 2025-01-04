@@ -2,3 +2,15 @@
   background-color: #f7c7c7 !important; /* 예시로 붉은 색 배경 */
   transition: background-color 0.3s ease;
 }
+
+.highlighted-cell {
+  background-color: lightblue !important;
+}
+
+.disable {
+  display: none;
+}
+
+.show {
+  display: block;
+}

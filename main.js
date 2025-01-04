@@ -7,17 +7,18 @@ let mainWindow;
 app.on("ready", () => {
   mainWindow = new BrowserWindow({
     width: 1280,
-    height: 800,
+    height: 1280,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       contextIsolation: true,
       nodeIntegration: false,
+      // spellcheck: true,
       // webSecurity: false,
     },
   });
 
   mainWindow.loadFile("index.html");
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 });
 
 // 1. 엑셀 파일 읽기
